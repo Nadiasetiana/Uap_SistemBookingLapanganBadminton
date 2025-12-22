@@ -4,8 +4,6 @@ import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import java.awt.*;
 import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
-import java.time.format.DateTimeParseException;
 import java.util.ArrayList;
 import java.util.Comparator;
 
@@ -17,42 +15,6 @@ public class SistemBookingBadminton extends JFrame {
     private JPanel cardPanel;
     private CardLayout cardLayout;
     //jj
-
-    // Class untuk merepresentasikan data booking
-    static class Booking {
-        String id;
-        String nama;
-        String telepon;
-        String lapangan;
-        LocalDate tanggal;
-        int jamMulai;
-        int jamSelesai;
-        double total;
-
-        public Booking(String id, String nama, String telepon, String lapangan,
-                       LocalDate tanggal, int jamMulai, int jamSelesai, double total) {
-            this.id = id;
-            this.nama = nama;
-            this.telepon = telepon;
-            this.lapangan = lapangan;
-            this.tanggal = tanggal;
-            this.jamMulai = jamMulai;
-            this.jamSelesai = jamSelesai;
-            this.total = total;
-        }
-
-        public String getJamFormat() {
-            return String.format("%02d:00-%02d:00", jamMulai, jamSelesai);
-        }
-
-        public String getTanggalFormat() {
-            return tanggal.format(DateTimeFormatter.ofPattern("dd-MM-yyyy"));
-        }
-
-        public String getTotalFormat() {
-            return String.format("Rp %,.0f", total);
-        }
-    }
 
     public SistemBookingBadminton() {
         setTitle("Sistem Booking Badminton");
