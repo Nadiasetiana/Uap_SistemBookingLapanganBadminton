@@ -1,18 +1,8 @@
 # 🏸 Sistem Booking Lapangan Badminton
 
-## 📋 Deskripsi Proyek
-Aplikasi desktop untuk mengelola booking lapangan badminton dengan fitur lengkap CRUD, file handling, sorting, searching, dan laporan statistik.
+##  Deskripsi Proyek
+Aplikasi desktop untuk mengelola booking lapangan badminton dengan fitur CRUD, file handling, sorting, searching, dan laporan statistik.
 
-**UAP Pemrograman Lanjut 2025**  
-**Universitas Muhammadiyah Malang**
-
----
-
-## 👥 Anggota Kelompok
-- Nadia Setiana Paris (202410370110403)
-- Shinta Alya Nachasyi (202410370110405)
-
----
 
 ## 🎯 Fitur Utama
 
@@ -35,7 +25,7 @@ Aplikasi desktop untuk mengelola booking lapangan badminton dengan fitur lengkap
     - Form Booking
     - Kelola Booking (dengan tabel)
     - Laporan & Statistik
-- Desain modern dengan gradient dan warna menarik
+- Desain modern dan warna menarik
 - User-friendly interface
 
 ### 4. **Sorting & Searching**
@@ -60,60 +50,19 @@ Aplikasi desktop untuk mengelola booking lapangan badminton dengan fitur lengkap
 
 ---
 
-## 🛠️ Teknologi & Tools
-
-- **Bahasa**: Java 8+
-- **GUI**: Java Swing
-- **IDE**: IntelliJ IDEA / NetBeans / VS Code
-- **Version Control**: Git & GitHub
-- **File Format**: CSV
-
 ---
 
 ## 📦 Struktur Project
 ```
 UAP-Booking-Badminton/
+├── .idea
 ├── src/
 │   └── UAP/
+        └── Booking.java
 │       └── SistemBookingBadminton.java
-├── booking_data.csv (auto-generated)
+├── booking_data.csv
 ├── README.md
-├── TESTING.md
-└── CODE_REVIEW.md
-```
-
----
-
-## 🚀 Cara Menjalankan Program
-
-### Prasyarat
-- Java Development Kit (JDK) 8 atau lebih tinggi
-- IDE Java (IntelliJ IDEA/NetBeans/Eclipse) atau text editor + terminal
-
-### Langkah-langkah:
-
-#### **Opsi 1: Menggunakan IDE**
-1. Clone repository:
-```bash
-   git clone https://github.com/username/uap-booking-badminton.git
-```
-2. Buka project di IDE
-3. Buka file `SistemBookingBadminton.java`
-4. Jalankan method `main()`
-
-#### **Opsi 2: Menggunakan Terminal**
-1. Clone repository
-2. Navigate ke folder project:
-```bash
-   cd uap-booking-badminton/src
-```
-3. Compile:
-```bash
-   javac UAP/SistemBookingBadminton.java
-```
-4. Run:
-```bash
-   java UAP.SistemBookingBadminton
+└── pom.xml
 ```
 
 ---
@@ -159,22 +108,6 @@ UAP-Booking-Badminton/
 
 ---
 
-## 🧪 Testing
-
-Lihat file `TESTING.md` untuk detail hasil testing:
-- Unit testing manual setiap fitur CRUD
-- Test validasi input
-- Test file handling
-- Test sorting & searching
-
----
-
-## 🔍 Code Review
-
-Lihat file `CODE_REVIEW.md` untuk:
-- Evaluasi kualitas kode
-- Refactoring yang dilakukan
-- Best practices yang diterapkan
 
 ---
 
@@ -206,7 +139,6 @@ Lihat file `CODE_REVIEW.md` untuk:
 
 ---
 
-## 📝 Catatan Penting
 
 ### File Data (`booking_data.csv`)
 - Dibuat otomatis saat pertama kali save
@@ -222,43 +154,4 @@ Lihat file `CODE_REVIEW.md` untuk:
 
 ---
 
-## 🐛 Troubleshooting
 
-**Q: Data hilang setelah restart?**  
-A: Pastikan file `booking_data.csv` ada di root folder project
-
-**Q: Error saat compile?**  
-A: Pastikan JDK sudah terinstall dan PATH sudah diset
-
-**Q: GUI tidak muncul?**  
-A: Cek apakah Java Swing sudah ter-support di system
-
----
-
-## 📞 Kontak & Support
-
-Jika ada pertanyaan atau issue:
-1. Buat issue di GitHub repository
-2. Hubungi anggota kelompok
-3. Konsultasi dengan asisten lab
-
----
-
-## 📄 Lisensi
-
-Project ini dibuat untuk keperluan UAP Pemrograman Lanjut 2025.  
-© 2025 - Universitas Muhammadiyah Malang
-
----
-
-## 🙏 Terima Kasih
-
-Terima kasih kepada:
-- Dosen Pengampu: Ir. Wildan Suharso, M.Kom.
-- Asisten Praktikum
-- Tim Laboratorium Informatika UMM
-
----
-
-**Last Updated**: Desember 2025  
-**Version**: 1.0
