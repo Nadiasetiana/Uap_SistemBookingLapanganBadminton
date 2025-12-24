@@ -107,7 +107,7 @@ class Booking {
                 String.valueOf(jamSelesai), String.valueOf(total));
     }
 
-    public static Booking fromCSV(String csv) throws Exception {
+    public static Booking fromCSV(String csv) throws Exception {// perubahan
         String[] p = csv.split(",");
         if (p.length != 8) throw new Exception("Format CSV tidak valid");
         return new Booking(p[0], p[1], p[2], p[3], LocalDate.parse(p[4]),
