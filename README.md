@@ -143,7 +143,6 @@ UAP-Booking-Badminton/
 ### File Data (`booking_data.csv`)
 - Dibuat otomatis saat pertama kali save
 - Format: `ID,Nama,Telepon,Lapangan,Tanggal,JamMulai,JamSelesai,Total`
-- **JANGAN dihapus** saat aplikasi berjalan
 - Backup berkala direkomendasikan
 
 ### Validasi Input
